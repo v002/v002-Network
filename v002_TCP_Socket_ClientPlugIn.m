@@ -32,7 +32,7 @@
 {	
 	return [NSDictionary dictionaryWithObjectsAndKeys:kQCPlugIn_Name, QCPlugInAttributeNameKey,
             [kQCPlugIn_Description stringByAppendingString:kv002DescriptionAddOnText], QCPlugInAttributeDescriptionKey,
-            kQCPlugIn_Category, QCPlugInAttributeCategoriesKey, nil];
+            kQCPlugIn_Category, @"categories", nil];
 }
 
 + (NSDictionary*) attributesForPropertyPortWithKey:(NSString*)key
