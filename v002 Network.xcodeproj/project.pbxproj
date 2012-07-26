@@ -6,21 +6,6 @@
 	objectVersion = 45;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		233E2C640A83C768005A62DF /* Build & Copy */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 233E2D890A83C7AC005A62DF /* Build configuration list for PBXAggregateTarget "Build & Copy" */;
-			buildPhases = (
-				233E2C690A83C783005A62DF /* ShellScript */,
-			);
-			dependencies = (
-				233E2C660A83C76D005A62DF /* PBXTargetDependency */,
-			);
-			name = "Build & Copy";
-			productName = "Build & Install";
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		16BA95420A7EB2EB001E4983 /* v002_TCP_Socket_ServerPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BA95410A7EB2EB001E4983 /* v002_TCP_Socket_ServerPlugIn.m */; };
 		16BA96310A7EB9AC001E4983 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BA96300A7EB9AC001E4983 /* Quartz.framework */; };
@@ -32,16 +17,6 @@
 		1BE07C10155208AA00D626F7 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE07C0E155208AA00D626F7 /* GCDAsyncUdpSocket.m */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		233E2C650A83C76D005A62DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = "v002 TCP Socket Reader";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -176,6 +151,7 @@
 			buildPhases = (
 				8D5B49B1048680CD000E48DA /* Sources */,
 				8D5B49B3048680CD000E48DA /* Frameworks */,
+				1B884FAA15C0FFE7009AB948 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -207,13 +183,12 @@
 			projectRoot = "";
 			targets = (
 				8D5B49AC048680CD000E48DA /* v002 Network */,
-				233E2C640A83C768005A62DF /* Build & Copy */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		233E2C690A83C783005A62DF /* ShellScript */ = {
+		1B884FAA15C0FFE7009AB948 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -243,14 +218,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		233E2C660A83C76D005A62DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8D5B49AC048680CD000E48DA /* v002 Network */;
-			targetProxy = 233E2C650A83C76D005A62DF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB913B08733D840010E9CD /* Debug */ = {
@@ -318,24 +285,6 @@
 			};
 			name = Release;
 		};
-		233E2D8A0A83C7AC005A62DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = "Build & Install";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		233E2D8B0A83C7AC005A62DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = "Build & Install";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,15 +302,6 @@
 			buildConfigurations = (
 				1DEB913F08733D840010E9CD /* Debug */,
 				1DEB914008733D840010E9CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		233E2D890A83C7AC005A62DF /* Build configuration list for PBXAggregateTarget "Build & Copy" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				233E2D8A0A83C7AC005A62DF /* Debug */,
-				233E2D8B0A83C7AC005A62DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
