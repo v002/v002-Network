@@ -73,17 +73,6 @@
 	return self;
 }
 
-- (void) finalize
-{
-	[self.listenSocket close];
-	self.listenSocket = nil;
-	
-	dispatch_release(socket_queue);
-	
-	self.messageString = nil;
-	[super finalize];
-}
-
 - (void) dealloc
 {
 	[self.listenSocket close];

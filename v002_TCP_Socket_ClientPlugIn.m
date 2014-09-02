@@ -79,12 +79,6 @@
 	return self;
 }
 
-- (void) finalize
-{
-	self.messageString = nil;
-	[super finalize];
-}
-
 - (void) dealloc
 {
 	self.messageString = nil;

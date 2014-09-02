@@ -79,15 +79,6 @@
 	return self;
 }
 
-- (void) finalize
-{
-	self.connectSocket = nil;
-	
-	dispatch_release(socket_queue);
-	
-	[super finalize];
-}
-
 - (void) dealloc
 {
 	self.connectSocket = nil;

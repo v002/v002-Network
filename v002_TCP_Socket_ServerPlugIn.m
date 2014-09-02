@@ -76,15 +76,6 @@
 	return self;
 }
 
-- (void) finalize
-{
-	self.listenSocket = nil;
-	self.messageString = nil;
-	self.connectedSockets = nil;
-
-	[super finalize];
-}
-
 - (void) dealloc
 {
 	self.listenSocket = nil;
